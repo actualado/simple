@@ -1,0 +1,310 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    box-shadow: 1px 1px 10px rgb(204, 204, 204);
+    position: sticky;
+    top:0px;
+    background:white;
+    z-index: 2;
+}
+.header-left{
+    margin-left: 20px;
+}
+.header-left h3{
+    color:orangered;
+    font-size: 20px;
+}
+.header-right{
+    margin-right: 20px;
+}
+.header-right i{
+    font-size:20px;
+    color: rgb(32,32,32);
+    margin-left: 10px;
+}
+.header-center{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-center input{
+    padding:5px;
+    outline:none;
+    border:1px solid lightgray;
+}
+.header-center button{
+    padding:5px;
+    outline:none;
+    border:1px solid lightgray;
+    border-left: none;
+}
+
+.header-center button i{
+    color: rgb(145, 145, 145);
+}
+
+
+
+
+
+
+
+
+.feed .feed-right .idCard{
+    padding: 10px;
+    box-shadow: 1px 5px 10px rgb(145, 145, 145);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.feed .idCard .idCard-left {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.feed .idCard .idCard-right h1{
+    color: rgb(32,32,32);
+    font-size: 15px;
+}
+.feed .idCard .idCard-right p{
+    font-size:12px;
+    color: orangered;
+}
+.feed .idCard .idCard-right{
+    flex:1;
+}
+
+.feed .suggestions{
+    padding: 10px;
+    box-shadow: 1px 5px 10px rgb(145, 145, 145);
+    margin-top: 20px;
+}
+
+.post{
+    border:1px solid lightgray;
+    margin-bottom: 10px;
+}
+
+.post .post-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+   
+
+}
+
+.post .post-header h1{
+    font-size: 15px;
+}
+
+.post .post-img{
+    width: 100%;
+}
+
+.post .post-img img{
+    width:100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.post .post-desc{
+    padding: 10px;
+}
+
+
+
+.post-form h1{
+    margin:10px;
+    color: rgb(32,32,32);
+    font-size: 20px;
+    padding-top: 10px;
+}
+.post-form input{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    display: block;
+    padding: 3px;
+    border:1px solid orangered;
+    background:rgb(228, 228, 228);
+}
+
+.post-form input:focus{
+    outline: none;
+    
+    
+}
+
+.post-form button{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 15px;
+    background: rgb(25, 163, 255);
+    color: white;
+    outline: none;
+    border:none;
+    
+    border-radius: 16px;
+    
+}
+
+.post-form button:hover{
+    background:rgb(58, 176, 255);
+    transition:.4s;
+}
+
+.post-form button:active{
+    background:grey;
+}
+
+
+.login-form{
+    max-width: 320px;
+    
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 1px 3px 10px rgb(145, 145, 145);
+    
+}
+
+.login-form h1{
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.login-form h2{
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: orangered;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.login-form input{
+    outline: none;
+    border:none;
+    background:rgb(228, 228, 228);
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: 10px;
+    
+    
+    
+}
+
+.login-form button{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    border:none;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 16px;
+
+}
+
+.login-form button:hover{
+    background:rgb(25, 163, 255);
+    transition:.4s;
+}
+
+.login-form a{
+    text-decoration: none;
+    color: orangered;
+    font-size: 12px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    display: block;
+}
+
+.feed{
+    display: flex;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:20px;
+    justify-content: space-between;
+}
+
+.feed-left-cont{
+    flex:0.7;
+    
+    margin-right:20px;
+}
+
+.feed-left-cont .post-form{
+    
+    box-shadow: 1px 5px 10px rgb(145, 145, 145);
+    margin-top:-10px;
+}
+
+.feed-right{
+    flex:0.3;
+   
+}
+
+.feed-left{
+    box-shadow: 1px 5px 10px rgb(145, 145, 145);
+    margin-top:20px;
+}
+
+#id-card-image{
+    height: 60px;
+}
+
+.suggestion{
+    display: flex;
+    
+    align-items: center;
+    background:white;
+    padding: 5px;
+    border:1px solid lightgray;
+    margin-top: 4px;
+    
+
+}
+.suggestion .suggestion-left{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:1px solid lightgray;
+    
+}
+.suggestion .suggestion-left img{
+    height: 50px;
+   
+
+}
